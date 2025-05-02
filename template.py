@@ -17,8 +17,6 @@ list_of_path = [
     f"{main_folder}/Pipeline/Stages_of_Pipeline.py",
     f"{main_folder}/Utility/__init__.py",
     f"{main_folder}/Utility/common.py",
-    f"{main_folder}/gen_ai/__init__.py",
-    f"{main_folder}/gen_ai/helper.py",
     "app.py",
     "main.py",
     "requirements.txt",
