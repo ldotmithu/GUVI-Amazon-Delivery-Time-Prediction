@@ -30,22 +30,20 @@ A machine learning project to predict Amazon delivery times with 78% accuracy ba
    pip install -r requirements.txt
    ``` 
 4. 🏗️ Project Structure
-
-    ```bash
+```bash
     📦 GUVI-Amazon-Delivery-Time-Prediction
-├── 📂 artifacts/               # Pipeline outputs
-├── 📂 src/
-│   ├── 📂 Config/              # Configuration classes
-│   ├── 📂 Pipeline/            # Pipeline stages
-│   ├── 📂 Utility/             # Helper functions
-│   └── 📂 components/          # Pipeline components
-├── 📜 app.py                   # 🖥️ Streamlit app
-├── 📜 main.py                  # ⚙️ Main pipeline
-├── ⚙️ params.yaml              # Model parameters
-├── 📐 schema.yaml              # Data schema
-└── 📝 requirements.txt         # Dependencies
-
-    ```  
+        ├── 📂 artifacts/               # Pipeline outputs
+        ├── 📂 src/
+        │   ├── 📂 Config/              # Configuration classes
+        │   ├── 📂 Pipeline/            # Pipeline stages
+        │   ├── 📂 Utility/             # Helper functions
+        │   └── 📂 components/          # Pipeline components
+        ├── 📜 app.py                   # 🖥️ Streamlit app
+        ├── 📜 main.py                  # ⚙️ Main pipeline
+        ├── ⚙️ params.yaml              # Model parameters
+        ├── 📐 schema.yaml              # Data schema
+        └── 📝 requirements.txt         # Dependencies
+ ```  
 
 5. 🖥️ Usage
    Run the Streamlit App:
