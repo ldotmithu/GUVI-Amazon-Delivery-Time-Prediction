@@ -7,6 +7,7 @@ from pathlib import Path
 class DataIngestionConfig:
     root_dir :Path = "artifacts/data_ingestion"
     URL:str="https://github.com/ldotmithu/Dataset/raw/refs/heads/main/amazon_delivery.zip"
+    #URL:str = "https://github.com/ldotmithu/Dataset/raw/refs/heads/main/amazon_delivery_miss_col.zip"
     local_data_path:Path = "artifacts/data_ingestion/data.zip"
     unzip_dir :Path = "artifacts/data_ingestion"
     

@@ -17,7 +17,7 @@ class DataValidation:
         all_columns = data.columns    
         req_columns = self.schema
         
-        miss_columns = [col for col in all_columns if col not in req_columns]
+        miss_columns = [col for col in req_columns if col not in all_columns]
         if miss_columns:
             Validation_Status =False
             with open(os.path.join(self.validation.root_dir,self.validation.status_path),'w') as f:
