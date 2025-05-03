@@ -44,13 +44,13 @@ with st.sidebar.expander("📍 Location Details", expanded=True):
     drop_long = st.number_input("Drop Longitude", value=79.8651)
 
 with st.sidebar.expander("🌤️ Environment & Vehicle", expanded=True):
-    weather = st.selectbox("Weather Condition",['Sunny' 'Stormy' 'Sandstorms' 'Cloudy' 'Fog' 'Windy'])
-    traffic = st.selectbox("Traffic Condition", ['High ' 'Jam ' 'Low ' 'Medium '])
-    vehicle = st.selectbox("Vehicle Type", ['motorcycle ' 'scooter ' 'van'])
-    area = st.selectbox("Delivery Area",  ['Urban ' 'Metropolitian ' 'Semi-Urban ' 'Other'])
-    category = st.selectbox("Item Category",['Clothing' 'Electronics' 'Sports' 'Cosmetics' 'Toys' 'Snacks' 'Shoes'
- 'Apparel' 'Jewelry' 'Outdoors' 'Grocery' 'Books' 'Kitchen' 'Home'
- 'Pet Supplies' 'Skincare'])
+    weather = st.selectbox("Weather Condition",['Sunny', 'Stormy', 'Sandstorms' ,'Cloudy' ,'Fog' ,'Windy'])
+    traffic = st.selectbox("Traffic Condition", ['High ' ,'Jam ' ,'Low ', 'Medium '])
+    vehicle = st.selectbox("Vehicle Type", ['motorcycle ', 'scooter ', 'van'])
+    area = st.selectbox("Delivery Area",  ['Urban ' ,'Metropolitian ' ,'Semi-Urban ' ,'Other'])
+    category = st.selectbox("Item Category",['Clothing' ,'Electronics', 'Sports', 'Cosmetics' ,'Toys', 'Snacks', 'Shoes',
+ 'Apparel', 'Jewelry' ,'Outdoors' ,'Grocery', 'Books' ,'Kitchen', 'Home',
+ 'Pet Supplies', 'Skincare'])
 
 with st.sidebar.expander("⏱️ Timing Details", expanded=True):
     order_date = st.date_input("Order Date", datetime.today())
