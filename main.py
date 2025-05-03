@@ -1,4 +1,5 @@
-from src.Pipeline.Stages_of_Pipeline import DataIngestionPipeline,DataValidationPipeline,DataTransformPipeline
+from src.Pipeline.Stages_of_Pipeline import (DataIngestionPipeline,DataValidationPipeline,DataTransformPipeline,
+                                             ModelTrainPipeline)
 import os 
 
 try:
@@ -25,5 +26,13 @@ try:
     print("-------------------------")
 except Exception as e:
     raise e  
+
+try:
+    print("Enter the Data Transform")
+    train = ModelTrainPipeline()
+    train.main()
+    print("-------------------------")
+except Exception as e:
+    raise e 
     
     

@@ -1,6 +1,7 @@
 from src.components.data_ingestion import DataIngestion
 from src.components.data_validation import DataValidation
 from src.components.data_transfomation import DataTransform
+from src.components.model_trainer import ModelTrainer
 import os 
 
 
@@ -28,5 +29,12 @@ class DataTransformPipeline:
     
     def main(self):
         transform = DataTransform()
-        transform.initiate_preprocess()        
+        transform.initiate_preprocess()      
+        
+class ModelTrainPipeline:
+    def __init__(self):
+        pass
+    def main(self):
+        trainer = ModelTrainer()
+        trainer.training()          
     
