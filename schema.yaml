@@ -1,0 +1,17 @@
+columns:
+  - Order_ID 
+  - Agent_Age 
+  - Agent_Rating
+  - Store_Latitude
+  - Store_Longitude
+  - Drop_Latitude
+  - Drop_Longitude
+  - Order_Date
+  - Order_Time
+  - Pickup_Time
+  - Weather
+  - Traffic
+  - Vehicle
+  - Area
+  - Delivery_Time
+  - Category
