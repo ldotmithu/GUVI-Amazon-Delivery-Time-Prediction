@@ -16,3 +16,10 @@ class DataValidationConfig:
     data_path:Path = "artifacts/data_ingestion/amazon_delivery.csv"
     status_path:Path = "status.txt"
     
+@dataclass 
+class DataTransformConfig:
+    root_dir :Path = "artifacts/data_transfomation"
+    data_path:Path = "artifacts/data_ingestion/amazon_delivery.csv"
+    status_path :Path = "artifacts/data_validation/status.txt"
+    preprocess_path :Path = "artifacts/data_transfomation/preprocess.pkl"
+          

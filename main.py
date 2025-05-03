@@ -1,4 +1,4 @@
-from src.Pipeline.Stages_of_Pipeline import DataIngestionPipeline,DataValidationPipeline
+from src.Pipeline.Stages_of_Pipeline import DataIngestionPipeline,DataValidationPipeline,DataTransformPipeline
 import os 
 
 try:
@@ -13,6 +13,14 @@ except Exception as e:
 try:
     print("Enter the Data Validation")
     ingestion = DataValidationPipeline()
+    ingestion.main()
+    print("-------------------------")
+except Exception as e:
+    raise e  
+
+try:
+    print("Enter the Data Transform")
+    ingestion = DataTransformPipeline()
     ingestion.main()
     print("-------------------------")
 except Exception as e:

@@ -15,3 +15,34 @@ columns:
   - Area
   - Delivery_Time
   - Category
+
+drop-columns:
+  - Order_ID
+  - Order_DateTime
+  - Pickup_DateTime
+  - Order_Date
+  - Order_Time
+  - Pickup_Time
+
+num-columns:
+ - Agent_Age
+ - Agent_Rating
+ - Store_Latitude
+ - Store_Longitude
+ - Drop_Latitude
+ - Drop_Longitude
+ - Time_to_Pickup
+ - Order_Hour
+ - Order_Day
+ - Order_Month
+ - Order_Weekday
+
+cat-columns:
+- Weather
+- Traffic
+- Vehicle
+- Area
+- Category
+
+target:
+ - Delivery_Time
