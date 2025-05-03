@@ -3,6 +3,7 @@ from src.components.data_validation import DataValidation
 from src.components.data_transfomation import DataTransform
 from src.components.model_trainer import ModelTrainer
 import os 
+from src.components.model_evaluation import ModelEvaluation
 
 
 class DataIngestionPipeline:
@@ -36,5 +37,12 @@ class ModelTrainPipeline:
         pass
     def main(self):
         trainer = ModelTrainer()
-        trainer.training()          
+        trainer.training()      
+        
+class ModelEvaluationPipeline:
+    def __init__(self):
+        pass
+    def main(self):
+        evaluation =  ModelEvaluation()
+        evaluation.model_evaluation()            
     

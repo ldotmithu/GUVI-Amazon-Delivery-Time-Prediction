@@ -33,3 +33,6 @@ class ModelTrainingConfig:
 @dataclass 
 class ModelEvaluationConfig:
     root_dir:Path = "artifacts/evaluation"        
+    model_path:Path = "artifacts/trainer/model.pkl"
+    metrics_path:Path = "metrics.json"
+    test_data:Path = "artifacts/data_transfomation/test.npy"
